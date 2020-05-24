@@ -35,10 +35,10 @@ namespace MobileFinalProject.ViewModels
             try
             {
                 SWApiService swApiService = new SWApiService(new HttpClient());
-                var items = await swApiService.GetShips("starships");
-                foreach (var item in items)
+                var starships = await swApiService.GetShips("starships");
+                foreach (var ship in starships)
                 {
-                    ShipModels.Add(item);
+                    ShipModels.Add(ship);
                 }
             }
             catch (Exception ex)

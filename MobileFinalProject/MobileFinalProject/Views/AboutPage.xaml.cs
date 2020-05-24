@@ -14,5 +14,10 @@ namespace MobileFinalProject.Views
         {
             InitializeComponent();
         }
+
+        async void Button_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Thanks for stopping!", "This App has been created for Mobile Application's final project. Hope you enjoyed the game", "Click to leave");
+        }
     }
 }

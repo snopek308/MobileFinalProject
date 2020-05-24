@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Star Wars Game"
+             x:Class="MobileFinalProject.Views.HomePage">
+    <StackLayout>
+        <Label Text="Click the Button!"
+               VerticalOptions="Start"
+               FontSize="Title"
+               Grid.Row="0"
+               Grid.ColumnSpan="2"
+               FontAttributes="Bold"/>
+        <Button x:Name="RefreshButton"
+                Clicked="SwBtn_Click"
+                Text="Star Wars Surprise!"
+                Margin="10" />
+        <Label x:Name="answer" Text="{Binding result}"/>
+    </StackLayout>
+        
+
+</ContentPage>

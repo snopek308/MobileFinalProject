@@ -30,6 +30,15 @@ namespace MobileFinalProject.Services
             return swJsonResponse.results;
         }
 
+        public async Task<List<PeopleModel>> GetPeople(string path)
+        {
+            var response = await this.httpClient.GetAsync(this.baseUrl + path);
+            response.EnsureSuccessStatusCode();
+            var resp = await response.Content.ReadAsStringAsync();
+            SwPeopleResponse swPeopleResponse = JsonConvert.DeserializeObject<SwPeopleResponse>(resp);
+            return swPeopleResponse.results;
+        }
+
         
     }
 }

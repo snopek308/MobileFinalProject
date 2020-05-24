@@ -31,12 +31,19 @@
 
     <!-- Your Pages -->
     <TabBar>
-        <Tab Title="SW Ships" Icon="tab_feed.png">
+        <Tab Title="Home" Icon="jedi.png">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+        </Tab>
+        <Tab Title="SW Ships" Icon="rocket.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
-        <Tab Title="About" Icon="tab_about.png">
+        <Tab Title="People" Icon="whills.png">
+            <ShellContent ContentTemplate="{DataTemplate local:PeoplePage}"/>
+        </Tab>
+        <Tab Title="The Empire" Icon="empire.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
+        
     </TabBar>
 
     <!-- Optional Templates 
