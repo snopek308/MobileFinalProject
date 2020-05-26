@@ -14,10 +14,11 @@
                Grid.ColumnSpan="2"
                FontAttributes="Bold"/>
         <Button x:Name="RefreshButton"
+                FontSize="Large"
                 Clicked="SwBtn_Click"
                 Text="Star Wars Surprise!"
                 Margin="10" />
-        <Label x:Name="answer" Text="{Binding result}"/>
+        <Label x:Name="answer" Text="{Binding result}" FontSize="Large"/>
     </StackLayout>
         
 
